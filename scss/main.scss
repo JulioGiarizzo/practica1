@@ -116,7 +116,10 @@ img{
                 @include bgartindex350();
                 display:grid;
                 grid-template-columns: 1fr 1fr;
-                max-height: 500px;
+                
+                width: 100%;
+                min-height: 310px;
+
                 
 
                 img{

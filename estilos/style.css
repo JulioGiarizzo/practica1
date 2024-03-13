@@ -81,7 +81,8 @@ img {
     background: radial-gradient(at 0% 0%, rgb(150, 5, 5), rgb(192, 157, 17));
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-height: 500px;
+    width: 100%;
+    min-height: 310px;
   }
   .secindexdos .reco article img {
     height: 100%;
