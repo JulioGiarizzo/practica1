@@ -36,16 +36,35 @@ img{
 
 @mixin haches1y2 (){
     background: radial-gradient(at 0% 0%, rgb(252, 252, 95), rgb(255, 225, 0));
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 2%;
+    width: 100%;
 }
 
 @mixin hache3(){
-    background:radial-gradient(at 0% 0%, rgb(157, 255, 0), rgb(0, 255, 204), 0.888);
+    background:radial-gradient(at 0% 0%, rgb(157, 255, 0), rgb(0, 255, 204));
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    padding: 2%;
+}
+
+@mixin basicsa(){
+    color: white;
+    background-color: black;
+    border: solid white 1px;
+    border-radius: 8px;
+    padding: 2%;
+    text-decoration: none;
 }
 
 
 
 /* 350 index-------------------------------------------------------- */
-@media screen and (max-width:350px) {
+@media screen and (min-width:350px) {
     
     main{
         @include flecoce();
@@ -53,6 +72,83 @@ img{
             @include flecoce();
             .cuadro{
                 @include flecoce();
+                background:radial-gradient(at 0% 0%, rgb(11, 11, 48), rgba(29, 29, 150, 0.592)) ;
+                padding: 2%;
+
+                h2{
+                    @include haches1y2();
+                    font-size: 25px;
+                }
+
+                p{
+                    color: white;
+                    font-size: 20;
+                    font-weight: 700;
+                    padding: 2%;
+                    text-align: justify;
+                    hyphens: auto;
+                }
+
+                a{
+                    @include basicsa();
+                
+                }
+
+
+            }
+        }
+    }
+
+    .secindexdos{
+        @include flecoce();
+        background-color: rgb(24, 0, 46);
+
+        h2{
+            @include haches1y2();
+        }
+
+        .reco{
+            @include flecoce();
+            gap: 1rem;
+
+            article{
+
+                @include bgartindex350();
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                max-height: 500px;
+                
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                div{
+                    
+                    @include flecoce();
+                    justify-content: space-between;
+                    padding: 2%;
+                    max-height: 300px;
+
+                    h3{
+                        @include hache3();
+                    }
+
+                    p{
+                        text-align: center;
+                        color: black;
+                        font-size: 15px;
+                        font-weight: 500;
+
+                    }
+
+                    a{
+                        @include basicsa();
+                    }
+                }
+
             }
         }
     }
