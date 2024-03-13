@@ -47,7 +47,15 @@ img{
 /* 350 index-------------------------------------------------------- */
 @media screen and (max-width:350px) {
     
-    
+    main{
+        @include flecoce();
+        section{
+            @include flecoce();
+            .cuadro{
+                @include flecoce();
+            }
+        }
+    }
 
 
 }
