@@ -119,6 +119,67 @@ img {
     padding: 2%;
     text-decoration: none;
   }
+  footer {
+    width: 100%;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    gap: 1rem;
+  }
+  footer .gracia {
+    border: solid white 2px;
+    border-radius: 9px;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  footer .gracia p {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 8px;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    width: 300px;
+  }
+  footer ul li {
+    list-style: none;
+  }
+  footer ul li a {
+    text-decoration: none;
+  }
+  footer ul li a img {
+    min-width: 45px;
+    max-width: 80px;
+    min-height: 45px;
+    max-height: 80px;
+  }
+  footer .footerc {
+    border: solid white 2px;
+    border-radius: 8px;
+    width: 50%;
+  }
+  footer .footerc a {
+    text-decoration: none;
+  }
+  footer .footerc a p {
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
